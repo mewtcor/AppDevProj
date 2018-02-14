@@ -1,0 +1,10 @@
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\bin\Debug\DentistryIS.exe.config
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\bin\Debug\DentistryIS.exe
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\bin\Debug\DentistryIS.pdb
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csprojResolveAssemblyReference.cache
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.Form1.resources
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csproj.GenerateResource.Cache
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csproj.CoreCompileInputs.cache
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.exe
+C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.pdb
