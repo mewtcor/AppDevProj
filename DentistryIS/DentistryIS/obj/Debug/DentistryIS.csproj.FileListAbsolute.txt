@@ -8,3 +8,13 @@ C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csproj.
 C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csproj.CoreCompileInputs.cache
 C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.exe
 C:\Users\mewt\source\repos\DentistryIS\DentistryIS\obj\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\bin\Debug\DentistryIS.exe.config
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\bin\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\bin\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\obj\Debug\DentistryIS.Form1.resources
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csproj.GenerateResource.Cache
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\obj\Debug\DentistryIS.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\obj\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\Project\DentistryIS\DentistryIS\obj\Debug\DentistryIS.pdb
