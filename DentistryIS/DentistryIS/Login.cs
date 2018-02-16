@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DentistryIS
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -24,6 +24,14 @@ namespace DentistryIS
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
             this.Close();
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminDash adForm = new AdminDash();
+            adForm.Show();
         }
     }
 }
