@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnDoctor = new System.Windows.Forms.Button();
             this.btnAssistant = new System.Windows.Forms.Button();
+            this.lblUser = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAdmin
@@ -40,7 +41,7 @@
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(241, 135);
             this.btnAdmin.TabIndex = 0;
-            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.Text = "Administrator";
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
@@ -74,11 +75,21 @@
             this.btnAssistant.UseVisualStyleBackColor = true;
             this.btnAssistant.Click += new System.EventHandler(this.btnAssistant_Click);
             // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Location = new System.Drawing.Point(417, 102);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(19, 25);
+            this.lblUser.TabIndex = 4;
+            this.lblUser.Text = "-";
+            // 
             // StartUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 381);
+            this.ClientSize = new System.Drawing.Size(990, 415);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.btnAssistant);
             this.Controls.Add(this.btnDoctor);
             this.Controls.Add(this.label1);
@@ -97,5 +108,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDoctor;
         private System.Windows.Forms.Button btnAssistant;
+        private System.Windows.Forms.Label lblUser;
     }
 }

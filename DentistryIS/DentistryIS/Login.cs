@@ -23,15 +23,24 @@ namespace DentistryIS
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            this.Close();
-
+            //this.Close();
+            System.Environment.Exit(0);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             AdminDash adForm = new AdminDash();
             adForm.Show();
+        }
+        private void AdminLogin()
+        {
+
+        }
+        private void Login_Load(object sender, EventArgs e)
+        {
+            //StartUp StartUpForm = new StartUp();
+            //lblUser.Text = StartUpForm.LabelUser;
         }
     }
 }
