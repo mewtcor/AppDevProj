@@ -66,6 +66,7 @@
             this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
             this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(241, 36);
             this.viewProfileToolStripMenuItem.Text = "View Profile";
+            this.viewProfileToolStripMenuItem.Click += new System.EventHandler(this.viewProfileToolStripMenuItem_Click);
             // 
             // patientRecordsToolStripMenuItem
             // 
@@ -108,14 +109,14 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // assistantToolStripMenuItem
             // 
             this.assistantToolStripMenuItem.Name = "assistantToolStripMenuItem";
-            this.assistantToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.assistantToolStripMenuItem.Size = new System.Drawing.Size(207, 38);
             this.assistantToolStripMenuItem.Text = "Assistant";
             this.assistantToolStripMenuItem.Click += new System.EventHandler(this.assistantToolStripMenuItem_Click);
             // 

@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DCMS.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.AssistantDash.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorDash.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.StartUp.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.exe.config
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorProfile.resources

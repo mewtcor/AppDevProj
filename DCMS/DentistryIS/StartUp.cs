@@ -20,28 +20,29 @@ namespace DentistryIS
    
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            lblUser.Text = btnAdmin.Text;
-            LabelUser = lblUser.Text;
+            Globals.CurrentUser = "Administrator";
             this.Hide();
             Login ULogin = new Login();
             ULogin.Show();
         }
-        public string LabelUser
+        public string SessionUser
         {
-            get { return lblUser.Text; }
-            set { lblUser.Text = value; }
+            get { return this.lblUser.Text; }
+            set { this.lblUser.Text = value; }
         }
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void btnAssistant_Click(object sender, EventArgs e)
         {
-            lblUser.Text = btnDoctor.Text;
+            Globals.CurrentUser = "Assistant";
             Hide();
             Login ULogin = new Login();
             ULogin.Show();
         }
 
-        private void btnAssistant_Click(object sender, EventArgs e)
+        private void btnDoctor_Click(object sender, EventArgs e)
         {
-            lblUser.Text = btnAssistant.Text;
+            Globals.CurrentUser = "Doctor";
             Hide();
             Login ULogin = new Login();
             ULogin.Show();

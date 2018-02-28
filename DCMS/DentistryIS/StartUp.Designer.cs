@@ -40,35 +40,38 @@
             // 
             // btnAdmin
             // 
+            this.btnAdmin.BackColor = System.Drawing.Color.LightSalmon;
             this.btnAdmin.Font = new System.Drawing.Font("Lucida Console", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmin.Location = new System.Drawing.Point(55, 150);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(241, 135);
             this.btnAdmin.TabIndex = 0;
             this.btnAdmin.Text = "Administrator";
-            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.UseVisualStyleBackColor = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnDoctor
             // 
+            this.btnDoctor.BackColor = System.Drawing.Color.Teal;
             this.btnDoctor.Font = new System.Drawing.Font("Lucida Console", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoctor.Location = new System.Drawing.Point(375, 150);
             this.btnDoctor.Name = "btnDoctor";
             this.btnDoctor.Size = new System.Drawing.Size(241, 135);
             this.btnDoctor.TabIndex = 2;
             this.btnDoctor.Text = "Doctor";
-            this.btnDoctor.UseVisualStyleBackColor = true;
-            this.btnDoctor.Click += new System.EventHandler(this.button1_Click);
+            this.btnDoctor.UseVisualStyleBackColor = false;
+            this.btnDoctor.Click += new System.EventHandler(this.btnDoctor_Click);
             // 
             // btnAssistant
             // 
+            this.btnAssistant.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnAssistant.Font = new System.Drawing.Font("Lucida Console", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAssistant.Location = new System.Drawing.Point(699, 150);
             this.btnAssistant.Name = "btnAssistant";
             this.btnAssistant.Size = new System.Drawing.Size(241, 135);
             this.btnAssistant.TabIndex = 3;
             this.btnAssistant.Text = "Assistant";
-            this.btnAssistant.UseVisualStyleBackColor = true;
+            this.btnAssistant.UseVisualStyleBackColor = false;
             this.btnAssistant.Click += new System.EventHandler(this.btnAssistant_Click);
             // 
             // lblUser
@@ -83,7 +86,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.panel1.Location = new System.Drawing.Point(1, 336);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(986, 84);
@@ -91,7 +94,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(1, 2);
             this.panel2.Name = "panel2";
@@ -103,18 +106,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Console", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(362, 21);
+            this.label1.Location = new System.Drawing.Point(332, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 43);
+            this.label1.Size = new System.Drawing.Size(316, 43);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Login As:";
+            this.label1.Text = "User Access";
             // 
             // StartUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(988, 415);
+            this.ClientSize = new System.Drawing.Size(988, 421);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblUser);

@@ -30,5 +30,16 @@ namespace DentistryIS
             AssistantDash asDash = new AssistantDash();
             asDash.Show();
         }
+
+        private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DoctorProfile newDoctorProfile = new DoctorProfile();
+            // Set the Parent Form of the Child window.
+            newDoctorProfile.MdiParent = this;
+            // Maximize Form
+            newDoctorProfile.WindowState = FormWindowState.Maximized;
+            // Display the new form.
+            newDoctorProfile.Show();
+        }
     }
 }
