@@ -46,23 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssistantDash.cs">
+    <Compile Include="Assistant\AssistantDash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AssistantDash.Designer.cs">
+    <Compile Include="Assistant\AssistantDash.Designer.cs">
       <DependentUpon>AssistantDash.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoctorDash.cs">
+    <Compile Include="Doctor\DoctorDash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoctorDash.Designer.cs">
+    <Compile Include="Doctor\DoctorDash.Designer.cs">
       <DependentUpon>DoctorDash.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoctorProfile.cs">
+    <Compile Include="Doctor\DoctorProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoctorProfile.Designer.cs">
+    <Compile Include="Doctor\DoctorProfile.Designer.cs">
       <DependentUpon>DoctorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor\DoctorCPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\DoctorCPW.Designer.cs">
+      <DependentUpon>DoctorCPW.cs</DependentUpon>
     </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="Login.cs">
@@ -71,10 +77,10 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminDash.cs">
+    <Compile Include="Admin\AdminDash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminDash.Designer.cs">
+    <Compile Include="Admin\AdminDash.Designer.cs">
       <DependentUpon>AdminDash.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -85,19 +91,22 @@
     <Compile Include="StartUp.Designer.cs">
       <DependentUpon>StartUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AssistantDash.resx">
+    <EmbeddedResource Include="Assistant\AssistantDash.resx">
       <DependentUpon>AssistantDash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorDash.resx">
+    <EmbeddedResource Include="Doctor\DoctorCPW.resx">
+      <DependentUpon>DoctorCPW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor\DoctorDash.resx">
       <DependentUpon>DoctorDash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorProfile.resx">
+    <EmbeddedResource Include="Doctor\DoctorProfile.resx">
       <DependentUpon>DoctorProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminDash.resx">
+    <EmbeddedResource Include="Admin\AdminDash.resx">
       <DependentUpon>AdminDash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

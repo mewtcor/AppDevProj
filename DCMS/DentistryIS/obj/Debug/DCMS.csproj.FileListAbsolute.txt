@@ -13,3 +13,4 @@
 \\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
 \\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
 \\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorProfile.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DoctorCPW.resources
