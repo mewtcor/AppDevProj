@@ -13,3 +13,19 @@
 \\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
 \\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
 \\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorProfile.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\bin\Debug\DentistryIS.exe.config
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csprojResolveAssemblyReference.cache
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AssistantDash.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorDash.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorProfile.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.StartUp.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.User.resources

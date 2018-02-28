@@ -40,5 +40,17 @@ namespace DentistryIS
             AssistantDash asForm = new AssistantDash();
             asForm.Show();    
         }
+
+        private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            User form = new User();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
