@@ -28,4 +28,7 @@ C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryI
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
-C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.User.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AddUser.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewUser.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateUser.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DeleteUser.resources
