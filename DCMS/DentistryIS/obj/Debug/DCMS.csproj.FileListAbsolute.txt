@@ -30,3 +30,4 @@ C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.Ge
 C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
 C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
 C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.PatientInfo.resources

@@ -58,7 +58,8 @@
             this.switchAccountToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(251, 757);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(148, 389);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,49 +67,50 @@
             // 
             this.viewProfileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewProfileToolStripMenuItem.Image")));
             this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
-            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.viewProfileToolStripMenuItem.Text = "View Profile";
             // 
             // patientProfileToolStripMenuItem
             // 
             this.patientProfileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("patientProfileToolStripMenuItem.Image")));
             this.patientProfileToolStripMenuItem.Name = "patientProfileToolStripMenuItem";
-            this.patientProfileToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.patientProfileToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.patientProfileToolStripMenuItem.Text = "Patient Profile";
             // 
             // patientRecordToolStripMenuItem
             // 
             this.patientRecordToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("patientRecordToolStripMenuItem.Image")));
             this.patientRecordToolStripMenuItem.Name = "patientRecordToolStripMenuItem";
-            this.patientRecordToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.patientRecordToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.patientRecordToolStripMenuItem.Text = "Patient Record";
+            this.patientRecordToolStripMenuItem.Click += new System.EventHandler(this.patientRecordToolStripMenuItem_Click);
             // 
             // appointmentsToolStripMenuItem
             // 
             this.appointmentsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("appointmentsToolStripMenuItem.Image")));
             this.appointmentsToolStripMenuItem.Name = "appointmentsToolStripMenuItem";
-            this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.appointmentsToolStripMenuItem.Text = "Appointments";
             // 
             // paymentsToolStripMenuItem
             // 
             this.paymentsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("paymentsToolStripMenuItem.Image")));
             this.paymentsToolStripMenuItem.Name = "paymentsToolStripMenuItem";
-            this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.paymentsToolStripMenuItem.Text = "Payments";
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reportsToolStripMenuItem.Image")));
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("changePasswordToolStripMenuItem.Image")));
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
             // switchAccountToolStripMenuItem
@@ -118,31 +120,32 @@
             this.doctorToolStripMenuItem});
             this.switchAccountToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("switchAccountToolStripMenuItem.Image")));
             this.switchAccountToolStripMenuItem.Name = "switchAccountToolStripMenuItem";
-            this.switchAccountToolStripMenuItem.Size = new System.Drawing.Size(238, 36);
+            this.switchAccountToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.switchAccountToolStripMenuItem.Text = "Switch Account";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // doctorToolStripMenuItem
             // 
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
-            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.doctorToolStripMenuItem.Text = "Doctor";
             this.doctorToolStripMenuItem.Click += new System.EventHandler(this.doctorToolStripMenuItem_Click);
             // 
             // AssistantDash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1442, 757);
+            this.ClientSize = new System.Drawing.Size(685, 389);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AssistantDash";
             this.Text = "AssistantDash";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

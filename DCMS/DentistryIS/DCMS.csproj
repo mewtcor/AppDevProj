@@ -52,6 +52,12 @@
     <Compile Include="Assistant\AssistantDash.Designer.cs">
       <DependentUpon>AssistantDash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Assistant\PatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assistant\PatientInfo.Designer.cs">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor\DoctorDash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="Assistant\AssistantDash.resx">
       <DependentUpon>AssistantDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assistant\PatientInfo.resx">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorCPW.resx">
       <DependentUpon>DoctorCPW.cs</DependentUpon>
