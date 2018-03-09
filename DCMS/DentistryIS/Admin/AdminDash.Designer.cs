@@ -110,14 +110,14 @@
             // doctorModuleToolStripMenuItem
             // 
             this.doctorModuleToolStripMenuItem.Name = "doctorModuleToolStripMenuItem";
-            this.doctorModuleToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.doctorModuleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.doctorModuleToolStripMenuItem.Text = "Doctor";
             this.doctorModuleToolStripMenuItem.Click += new System.EventHandler(this.doctorModuleToolStripMenuItem_Click);
             // 
             // assistantToolStripMenuItem
             // 
             this.assistantToolStripMenuItem.Name = "assistantToolStripMenuItem";
-            this.assistantToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.assistantToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.assistantToolStripMenuItem.Text = "Assistant";
             this.assistantToolStripMenuItem.Click += new System.EventHandler(this.assistantToolStripMenuItem_Click);
             // 

@@ -200,6 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(554, 328);
             this.Controls.Add(this.btnShowAll);
             this.Controls.Add(this.lblID);
@@ -222,7 +223,6 @@
             this.MinimizeBox = false;
             this.Name = "DeleteUser";
             this.Text = "DeleteUser";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

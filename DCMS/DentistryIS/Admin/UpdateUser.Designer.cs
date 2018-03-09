@@ -235,6 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(613, 338);
             this.Controls.Add(this.btnShowAll);
             this.Controls.Add(this.lblID);
@@ -257,7 +258,6 @@
             this.MinimizeBox = false;
             this.Name = "UpdateUser";
             this.Text = "UpdateUser";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UpdateUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dCMSdbDataSet)).EndInit();
