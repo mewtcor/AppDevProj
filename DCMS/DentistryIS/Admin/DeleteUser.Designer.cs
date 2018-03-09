@@ -218,6 +218,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "DeleteUser";
             this.Text = "DeleteUser";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

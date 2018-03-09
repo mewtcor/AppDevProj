@@ -147,9 +147,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(170, 20);
+            this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(107, 25);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 13);
+            this.label8.Size = new System.Drawing.Size(213, 18);
             this.label8.TabIndex = 15;
             this.label8.Text = "Enter Your Information";
             // 
@@ -234,6 +235,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddUser";
             this.Text = "AddUser";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

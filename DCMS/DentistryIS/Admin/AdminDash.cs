@@ -51,6 +51,7 @@ namespace DentistryIS
             AddUser form = new AddUser();
             form.MdiParent = this;
             form.Show();
+            form.WindowState = FormWindowState.Maximized;
         }
 
         private void viewUserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,6 +59,7 @@ namespace DentistryIS
             ViewUser form = new ViewUser();
             form.MdiParent = this;
             form.Show();
+            form.WindowState = FormWindowState.Maximized;
         }
 
         private void updateUserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,6 +67,7 @@ namespace DentistryIS
             UpdateUser form = new UpdateUser();
             form.MdiParent = this;
             form.Show();
+            form.WindowState = FormWindowState.Maximized;
         }
 
         private void deleteUserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,6 +75,7 @@ namespace DentistryIS
             DeleteUser form = new DeleteUser();
             form.MdiParent = this;
             form.Show();
+
         }
     }
 }
