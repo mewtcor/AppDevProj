@@ -46,5 +46,16 @@ namespace DentistryIS
             // Display the new form.
             newAssistantPatientInfo.Show();
         }
+
+        private void appointmentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Assistant.Appointment newAppointment = new Assistant.Appointment();
+            // Set the Parent Form of the Child window.
+            newAppointment.MdiParent = this;
+            // Maximize Form
+            newAppointment.WindowState = FormWindowState.Maximized;
+            // Display the new form.
+            newAppointment.Show();
+        }
     }
 }

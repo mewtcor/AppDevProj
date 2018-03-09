@@ -31,3 +31,4 @@ C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.Co
 C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
 C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
 C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.PatientInfo.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.Appointment.resources

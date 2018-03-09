@@ -180,5 +180,10 @@ namespace DentistryIS.Assistant
             ImagePictureBox.Image = Image.FromFile(OpenFd.FileName);
 
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

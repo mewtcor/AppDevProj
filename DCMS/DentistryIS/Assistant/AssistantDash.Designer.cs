@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssistantDash));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.viewProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.patientProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appointmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +48,6 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewProfileToolStripMenuItem,
-            this.patientProfileToolStripMenuItem,
             this.patientRecordToolStripMenuItem,
             this.appointmentsToolStripMenuItem,
             this.paymentsToolStripMenuItem,
@@ -70,13 +68,6 @@
             this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.viewProfileToolStripMenuItem.Text = "View Profile";
             // 
-            // patientProfileToolStripMenuItem
-            // 
-            this.patientProfileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("patientProfileToolStripMenuItem.Image")));
-            this.patientProfileToolStripMenuItem.Name = "patientProfileToolStripMenuItem";
-            this.patientProfileToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
-            this.patientProfileToolStripMenuItem.Text = "Patient Profile";
-            // 
             // patientRecordToolStripMenuItem
             // 
             this.patientRecordToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("patientRecordToolStripMenuItem.Image")));
@@ -91,6 +82,7 @@
             this.appointmentsToolStripMenuItem.Name = "appointmentsToolStripMenuItem";
             this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
             this.appointmentsToolStripMenuItem.Text = "Appointments";
+            this.appointmentsToolStripMenuItem.Click += new System.EventHandler(this.appointmentsToolStripMenuItem_Click);
             // 
             // paymentsToolStripMenuItem
             // 
@@ -145,7 +137,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AssistantDash";
             this.Text = "AssistantDash";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -160,7 +152,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem viewProfileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem patientProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem patientRecordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem appointmentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paymentsToolStripMenuItem;
