@@ -43,10 +43,13 @@
             this.AppointmentIDTextBox = new System.Windows.Forms.TextBox();
             this.PatientIDTextBox = new System.Windows.Forms.TextBox();
             this.PatientNameTextBox = new System.Windows.Forms.TextBox();
-            this.ServiceTextBox = new System.Windows.Forms.TextBox();
+            this.NoteTextBox = new System.Windows.Forms.TextBox();
             this.AppointmentDatePicker = new System.Windows.Forms.DateTimePicker();
             this.AppointmentTimeComboBox = new System.Windows.Forms.ComboBox();
             this.DentistComboBox = new System.Windows.Forms.ComboBox();
+            this.ServiceComboBox = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ClearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AppointmentDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,8 +58,9 @@
             this.AppointmentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AppointmentDataGridView.Location = new System.Drawing.Point(13, 83);
             this.AppointmentDataGridView.Name = "AppointmentDataGridView";
-            this.AppointmentDataGridView.Size = new System.Drawing.Size(766, 191);
+            this.AppointmentDataGridView.Size = new System.Drawing.Size(820, 191);
             this.AppointmentDataGridView.TabIndex = 0;
+            this.AppointmentDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AppointmentDataGridView_CellClick);
             this.AppointmentDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AppointmentDataGridView_CellContentClick);
             // 
             // label1
@@ -70,7 +74,7 @@
             // 
             // AddAppointmentButton
             // 
-            this.AddAppointmentButton.Location = new System.Drawing.Point(599, 49);
+            this.AddAppointmentButton.Location = new System.Drawing.Point(656, 54);
             this.AddAppointmentButton.Name = "AddAppointmentButton";
             this.AddAppointmentButton.Size = new System.Drawing.Size(75, 23);
             this.AddAppointmentButton.TabIndex = 2;
@@ -88,12 +92,13 @@
             // 
             // EditAppointmentButton
             // 
-            this.EditAppointmentButton.Location = new System.Drawing.Point(693, 48);
+            this.EditAppointmentButton.Location = new System.Drawing.Point(749, 54);
             this.EditAppointmentButton.Name = "EditAppointmentButton";
             this.EditAppointmentButton.Size = new System.Drawing.Size(75, 23);
             this.EditAppointmentButton.TabIndex = 4;
             this.EditAppointmentButton.Text = "Edit";
             this.EditAppointmentButton.UseVisualStyleBackColor = true;
+            this.EditAppointmentButton.Click += new System.EventHandler(this.EditAppointmentButton_Click);
             // 
             // label2
             // 
@@ -107,7 +112,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 338);
+            this.label3.Location = new System.Drawing.Point(39, 335);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 6;
@@ -116,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 367);
+            this.label4.Location = new System.Drawing.Point(22, 367);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 13);
             this.label4.TabIndex = 7;
@@ -134,7 +139,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(341, 367);
+            this.label6.Location = new System.Drawing.Point(390, 367);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 9;
@@ -143,7 +148,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(341, 428);
+            this.label7.Location = new System.Drawing.Point(393, 404);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 10;
@@ -169,26 +174,26 @@
             // PatientIDTextBox
             // 
             this.PatientIDTextBox.Enabled = false;
-            this.PatientIDTextBox.Location = new System.Drawing.Point(79, 335);
+            this.PatientIDTextBox.Location = new System.Drawing.Point(106, 335);
             this.PatientIDTextBox.Name = "PatientIDTextBox";
             this.PatientIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.PatientIDTextBox.TabIndex = 13;
             // 
             // PatientNameTextBox
             // 
-            this.PatientNameTextBox.Location = new System.Drawing.Point(93, 364);
+            this.PatientNameTextBox.Location = new System.Drawing.Point(106, 368);
             this.PatientNameTextBox.Name = "PatientNameTextBox";
             this.PatientNameTextBox.Size = new System.Drawing.Size(173, 20);
             this.PatientNameTextBox.TabIndex = 14;
             this.PatientNameTextBox.TextChanged += new System.EventHandler(this.PatientNameTextBox_TextChanged);
             // 
-            // ServiceTextBox
+            // NoteTextBox
             // 
-            this.ServiceTextBox.Location = new System.Drawing.Point(396, 367);
-            this.ServiceTextBox.Multiline = true;
-            this.ServiceTextBox.Name = "ServiceTextBox";
-            this.ServiceTextBox.Size = new System.Drawing.Size(194, 37);
-            this.ServiceTextBox.TabIndex = 16;
+            this.NoteTextBox.Location = new System.Drawing.Point(106, 404);
+            this.NoteTextBox.Multiline = true;
+            this.NoteTextBox.Name = "NoteTextBox";
+            this.NoteTextBox.Size = new System.Drawing.Size(194, 55);
+            this.NoteTextBox.TabIndex = 16;
             // 
             // AppointmentDatePicker
             // 
@@ -204,24 +209,57 @@
             this.AppointmentTimeComboBox.Name = "AppointmentTimeComboBox";
             this.AppointmentTimeComboBox.Size = new System.Drawing.Size(121, 21);
             this.AppointmentTimeComboBox.TabIndex = 18;
+            this.AppointmentTimeComboBox.SelectedIndexChanged += new System.EventHandler(this.AppointmentTimeComboBox_SelectedIndexChanged);
             // 
             // DentistComboBox
             // 
             this.DentistComboBox.FormattingEnabled = true;
-            this.DentistComboBox.Location = new System.Drawing.Point(393, 428);
+            this.DentistComboBox.Location = new System.Drawing.Point(446, 404);
             this.DentistComboBox.Name = "DentistComboBox";
             this.DentistComboBox.Size = new System.Drawing.Size(121, 21);
             this.DentistComboBox.TabIndex = 19;
+            this.DentistComboBox.SelectedIndexChanged += new System.EventHandler(this.DentistComboBox_SelectedIndexChanged);
+            // 
+            // ServiceComboBox
+            // 
+            this.ServiceComboBox.FormattingEnabled = true;
+            this.ServiceComboBox.Location = new System.Drawing.Point(446, 367);
+            this.ServiceComboBox.Name = "ServiceComboBox";
+            this.ServiceComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ServiceComboBox.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(63, 404);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Note: ";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Location = new System.Drawing.Point(106, 503);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(75, 23);
+            this.ClearButton.TabIndex = 22;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.ClientSize = new System.Drawing.Size(936, 538);
+            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.ServiceComboBox);
             this.Controls.Add(this.DentistComboBox);
             this.Controls.Add(this.AppointmentTimeComboBox);
             this.Controls.Add(this.AppointmentDatePicker);
-            this.Controls.Add(this.ServiceTextBox);
+            this.Controls.Add(this.NoteTextBox);
             this.Controls.Add(this.PatientNameTextBox);
             this.Controls.Add(this.PatientIDTextBox);
             this.Controls.Add(this.AppointmentIDTextBox);
@@ -264,9 +302,12 @@
         private System.Windows.Forms.TextBox AppointmentIDTextBox;
         private System.Windows.Forms.TextBox PatientIDTextBox;
         private System.Windows.Forms.TextBox PatientNameTextBox;
-        private System.Windows.Forms.TextBox ServiceTextBox;
+        private System.Windows.Forms.TextBox NoteTextBox;
         private System.Windows.Forms.DateTimePicker AppointmentDatePicker;
         private System.Windows.Forms.ComboBox AppointmentTimeComboBox;
         private System.Windows.Forms.ComboBox DentistComboBox;
+        private System.Windows.Forms.ComboBox ServiceComboBox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
