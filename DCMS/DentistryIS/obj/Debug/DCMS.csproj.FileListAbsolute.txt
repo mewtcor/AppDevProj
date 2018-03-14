@@ -23,7 +23,6 @@ C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryI
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
-C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.StartUp.resources
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
@@ -32,3 +31,5 @@ C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryI
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewUser.resources
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateUser.resources
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DeleteUser.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AddProfile.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateProfile.resources

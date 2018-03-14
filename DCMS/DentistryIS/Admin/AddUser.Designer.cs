@@ -63,6 +63,7 @@
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -72,6 +73,7 @@
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "UAccess";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -81,6 +83,7 @@
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "User Name";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -90,6 +93,7 @@
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 5;
             this.label5.Text = "Name";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -99,6 +103,7 @@
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "Contact";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -108,6 +113,7 @@
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Address";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtUsername
             // 
@@ -115,6 +121,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 20);
             this.txtUsername.TabIndex = 9;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPass
             // 
@@ -122,6 +129,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(100, 20);
             this.txtPass.TabIndex = 10;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // txtName
             // 
@@ -129,6 +137,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 12;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtContact
             // 
@@ -136,6 +145,7 @@
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(100, 20);
             this.txtContact.TabIndex = 13;
+            this.txtContact.TextChanged += new System.EventHandler(this.txtContact_TextChanged);
             // 
             // txtAddress
             // 
@@ -143,6 +153,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(100, 20);
             this.txtAddress.TabIndex = 14;
+            this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // label8
             // 
@@ -153,6 +164,7 @@
             this.label8.Size = new System.Drawing.Size(213, 18);
             this.label8.TabIndex = 15;
             this.label8.Text = "Enter Your Information";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // buttonSave
             // 
@@ -175,6 +187,7 @@
             this.comboBoxUA.Name = "comboBoxUA";
             this.comboBoxUA.Size = new System.Drawing.Size(121, 21);
             this.comboBoxUA.TabIndex = 17;
+            this.comboBoxUA.SelectedIndexChanged += new System.EventHandler(this.comboBoxUA_SelectedIndexChanged);
             // 
             // button1
             // 

@@ -75,7 +75,23 @@ namespace DentistryIS
             DeleteUser form = new DeleteUser();
             form.MdiParent = this;
             form.Show();
+            form.WindowState = FormWindowState.Maximized;
+        }
 
+        private void addProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddProfile form = new AddProfile();
+            form.MdiParent = this;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
+        }
+
+        private void updateProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateProfile form = new UpdateProfile();
+            form.MdiParent = this;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
         }
     }
 }
