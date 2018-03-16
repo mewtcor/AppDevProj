@@ -9,12 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.IO;
 
 
 namespace DentistryIS.Assistant
 {
     public partial class PatientInfo : Form
     {
+        //for image storing
+        string fileneame;
+
         public PatientInfo()
         {
             InitializeComponent();
@@ -47,8 +51,9 @@ namespace DentistryIS.Assistant
 
         private void AddButton_Click(object sender, EventArgs e)
         {
+
             conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("INSERT INTO Patient (Name, Age, Gender, Address, ContactNo, DOB, BloodGroup, HealthProblem) Values (@Name, @Age, @Gender, @Address, @ContactNo, @DOB, @BloodGroup, @HealthProblem)", conn);
+            cmd = new SqlCommand("INSERT INTO Patient (Name, Age, Gender, Address, ContactNo, DOB, BloodGroup, HealthProblem, Image) Values (@Name, @Age, @Gender, @Address, @ContactNo, @DOB, @BloodGroup, @HealthProblem, @Image)", conn);
 
             cmd.Parameters.AddWithValue("@Name", NameTextBox.Text);
             cmd.Parameters.AddWithValue("@Age", AgeTextBox.Text);
@@ -58,6 +63,7 @@ namespace DentistryIS.Assistant
             cmd.Parameters.AddWithValue("@DOB", DOBDateTimePicker.Value);
             cmd.Parameters.AddWithValue("@BloodGroup", BloodGroupComboBox.Text);
             cmd.Parameters.AddWithValue("@HealthProblem", HealthProbTextBox.Text);
+            cmd.Parameters.AddWithValue("@Image", ConvertImageToBinary(ImagePictureBox.Image));
 
             conn.Open();
             if (cmd.ExecuteNonQuery() == 1)
@@ -136,6 +142,18 @@ namespace DentistryIS.Assistant
                 }
                 BloodGroupComboBox.Text = row.Cells["BloodGroup"].Value.ToString();
                 HealthProbTextBox.Text = row.Cells["HealthProblem"].Value.ToString();
+                if ((row.Cells["image"].Value) == DBNull.Value)
+                {
+                    ImagePictureBox.Image = null;
+                    ImagePictureBox.Invalidate();
+                }
+                else
+                {
+                    MemoryStream ms = new MemoryStream((byte[])PatientDataGridView.CurrentRow.Cells["Image"].Value);
+                    ImagePictureBox.Image = Image.FromStream(ms);
+                }
+
+
             }
         }
 
@@ -147,7 +165,7 @@ namespace DentistryIS.Assistant
         private void updatePatient()
         {
             conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("Update Patient SET Name=@Name, Age=@Age, Gender=@Gender, Address=@Address, ContactNo=@ContactNo, DOB=@DOB, BloodGroup=@BloodGroup, HealthProblem=@HealthProblem WHERE Patient_ID=@PatientID", conn);
+            cmd = new SqlCommand("Update Patient SET Name=@Name, Age=@Age, Gender=@Gender, Address=@Address, ContactNo=@ContactNo, DOB=@DOB, BloodGroup=@BloodGroup, HealthProblem=@HealthProblem, Image=@Image WHERE Patient_ID=@PatientID", conn);
 
             cmd.Parameters.AddWithValue("@PatientID", PatientID);
             cmd.Parameters.AddWithValue("@Name", NameTextBox.Text);
@@ -158,6 +176,8 @@ namespace DentistryIS.Assistant
             cmd.Parameters.AddWithValue("@DOB", DOBDateTimePicker.Value);
             cmd.Parameters.AddWithValue("@BloodGroup", BloodGroupComboBox.Text);
             cmd.Parameters.AddWithValue("@HealthProblem", HealthProbTextBox.Text);
+            cmd.Parameters.AddWithValue("@Image", ConvertImageToBinary(ImagePictureBox.Image));
+
 
             conn.Open();
             if (cmd.ExecuteNonQuery() == 1)
@@ -172,13 +192,33 @@ namespace DentistryIS.Assistant
 
         private void UploadImageButton_Click(object sender, EventArgs e)
         {
-            OpenFileDialog OpenFd = new OpenFileDialog();
-            OpenFd.Filter = "Images only. | *.jpg; *jpeg; *png; *.gif;";
 
-            DialogResult dr = OpenFd.ShowDialog();
+            using (OpenFileDialog OpenFd = new OpenFileDialog() { Filter = "Images only. | *.jpg; *jpeg; *png; *.gif;", ValidateNames = true, Multiselect = false })
+            {
+                if (OpenFd.ShowDialog() == DialogResult.OK)
+                {
+                    fileneame = OpenFd.FileName;
+                    ImagePictureBox.Image = Image.FromFile(fileneame);
+                }
+            }
+        }
 
-            ImagePictureBox.Image = Image.FromFile(OpenFd.FileName);
+        byte[] ConvertImageToBinary(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                return ms.ToArray();
 
+            }
+        }
+
+        Image ConvertBinaryToImage(byte[] data)
+        {
+            using (MemoryStream ms = new MemoryStream(data))
+            {
+                return Image.FromStream(ms);
+            }
         }
 
         private void label11_Click(object sender, EventArgs e)

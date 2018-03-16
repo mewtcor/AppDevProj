@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.Configuration;
 namespace DentistryIS
 {
     public partial class AssistantDash : Form
     {
+        SqlConnection conn;
+        SqlCommand cmd;
+        string connstr = ConfigurationManager.ConnectionStrings["DCMSdb"].ConnectionString;
+        private SqlDataReader rdr;
         public AssistantDash()
         {
             InitializeComponent();
@@ -56,6 +61,11 @@ namespace DentistryIS
             newAppointment.WindowState = FormWindowState.Maximized;
             // Display the new form.
             newAppointment.Show();
+        }
+
+        private void AssistantDash_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

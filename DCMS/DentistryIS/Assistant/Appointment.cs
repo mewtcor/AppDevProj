@@ -19,7 +19,7 @@ namespace DentistryIS.Assistant
             InitializeComponent();
             FillCombo();
             AutoCompleteText();
-            ShowAppointmentData();
+            ShowAppointmentToday();
             AppointmentDatePicker.Value = System.DateTime.Now;
         }
 
@@ -41,9 +41,11 @@ namespace DentistryIS.Assistant
         private void ShowAppointmentData()
         {
             conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("SELECT * from Appointment WHERE Patient_Name LIKE @Name", conn);
+            cmd = new SqlCommand("SELECT * from Appointment WHERE Patient_Name LIKE @Name AND Cancelled=@Cancelled AND Date>=@Date", conn);
 
             cmd.Parameters.AddWithValue("@Name", ViewAppointmentTextBox.Text + "%");
+            cmd.Parameters.AddWithValue("@Cancelled", false);
+            cmd.Parameters.AddWithValue("@Date", DateTime.Today.Date);
 
             System.Data.DataTable dt = new System.Data.DataTable();
 
@@ -309,6 +311,109 @@ namespace DentistryIS.Assistant
         private void ClearButton_Click(object sender, EventArgs e)
         {
             ClearTB();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            if(AppointmentIDTextBox.Text==" ")
+            {
+                MessageBox.Show("Please select appointment to cancel");
+            }
+            else
+            {
+                conn = new SqlConnection(connstr);
+                cmd = new SqlCommand("Update Appointment SET Cancelled=@Cancelled WHERE AppointmentID=@AppointmentID", conn);
+
+                cmd.Parameters.AddWithValue("@AppointmentID", AppointmentIDTextBox.Text);
+                cmd.Parameters.AddWithValue("@Cancelled", true);
+
+                conn.Open();
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Appointment ID: " + AppointmentIDTextBox.Text + " has been Cancelled!");
+
+                    ClearTB();
+                    ShowAppointmentData();
+                }
+                conn.Close();
+            }
+        }
+
+        void ShowAppointmentToday()
+        {
+            conn = new SqlConnection(connstr);
+            cmd = new SqlCommand("SELECT * from Appointment WHERE Cancelled=@Cancelled AND Date=@Date", conn);
+
+            cmd.Parameters.AddWithValue("@Cancelled", false);
+            cmd.Parameters.AddWithValue("@Date", DateTime.Today.Date);
+
+            System.Data.DataTable dt = new System.Data.DataTable();
+
+            try
+            {
+                conn.Open();
+                rdr = cmd.ExecuteReader();
+
+                if (rdr.HasRows)
+                {
+                    dt.Load(rdr);
+                    AppointmentDataGridView.DataSource = dt;
+
+                }
+                else
+                {
+
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No data in table");
+            }
+        }
+
+        private void Appointment_Load(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
