@@ -19,8 +19,7 @@ namespace DentistryIS
         {
             InitializeComponent();
         }
-        private SqlConnection conn;
-        string connStr = ConfigurationManager.ConnectionStrings["DCMSdb"].ConnectionString;
+        SqlConnection conn = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DB\DCMSdb.mdf;Integrated Security = True; Connect Timeout = 30");
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,7 +33,6 @@ namespace DentistryIS
 
         private void btnBackUp_Click(object sender, EventArgs e)
         {
-            conn = new SqlConnection(connStr);
             conn.Open();
             string database = conn.Database.ToString();
             try
@@ -45,7 +43,7 @@ namespace DentistryIS
                 }
                 else
                 {
-                    string q = "BACKUP DATABASE [" + database + "]TO DISK='" + txtBackUp.Text + "\\" + "Database" + "-" + DateTime.Now.ToString("yyyy-MM-dd--HH--mm--ss") + ".bak'";
+                    string q = "BACKUP DATABASE [" + database + "]TO DISK='" + txtBackUp.Text + "\\" + "Database" + "-" + DateTime.Now.ToString("yyyy-MM-dd--HH--mm--ss") + ".mdf'";
                     SqlCommand cmd = new SqlCommand(q, conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Successfully Backup!");

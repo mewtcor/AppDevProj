@@ -24,7 +24,7 @@ namespace DentistryIS
         private void btnBrowseLocation_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "SQL SERVER database backup files|*.bak";
+            ofd.Filter = "SQL SERVER database backup files|*.mdf";
             ofd.Title = "Database Restore";
             if(ofd.ShowDialog() == DialogResult.OK)
             {
@@ -44,13 +44,13 @@ namespace DentistryIS
                 SqlCommand cmd1 = new SqlCommand(sql1, conn);
                 cmd1.ExecuteNonQuery();
 
-                string sql2 = string.Format("USE MASTER RESTORE DATABASE [" + database + "] FROM DISK='" +txtRestoreData.Text + "'WITH REPLACE;");
+                string sql2 = "USE MASTER RESTORE DATABASE [" + database + "] FROM DISK='" + txtRestoreData.Text + "'WITH REPLACE;";
                 SqlCommand cmd2 = new SqlCommand(sql2, conn);
-                cmd1.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
 
                 string sql3 = string.Format("ALTER DATABASE [" + database + "] SET MULTI_USER");
                 SqlCommand cmd3 = new SqlCommand(sql3, conn);
-                cmd1.ExecuteNonQuery();
+                cmd3.ExecuteNonQuery();
 
                 MessageBox.Show("Database has been Restored");
             }
