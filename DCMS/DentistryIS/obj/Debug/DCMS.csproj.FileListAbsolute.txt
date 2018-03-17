@@ -33,3 +33,8 @@ C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryI
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DeleteUser.resources
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AddProfile.resources
 C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateProfile.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AddService.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateService.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.BackUpData.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.RestoreData.resources
+C:\Users\Maikel Suwisto\term2\application development\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewDentist.resources

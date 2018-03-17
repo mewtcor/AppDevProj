@@ -35,6 +35,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddService.Designer.cs">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\UpdateUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +64,12 @@
     </Compile>
     <Compile Include="Assistant\AssistantDash.Designer.cs">
       <DependentUpon>AssistantDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BackUpData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\BackUpData.Designer.cs">
+      <DependentUpon>BackUpData.cs</DependentUpon>
     </Compile>
     <Compile Include="DCMSdbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -120,11 +133,35 @@
     <Compile Include="Admin\UpdateProfile.Designer.cs">
       <DependentUpon>UpdateProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\UpdateService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateService.Designer.cs">
+      <DependentUpon>UpdateService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RestoreData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\RestoreData.Designer.cs">
+      <DependentUpon>RestoreData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDentist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDentist.Designer.cs">
+      <DependentUpon>ViewDentist.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\AddService.resx">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Assistant\AssistantDash.resx">
       <DependentUpon>AssistantDash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\BackUpData.resx">
+      <DependentUpon>BackUpData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorDash.resx">
       <DependentUpon>DoctorDash.cs</DependentUpon>
@@ -162,6 +199,15 @@
     <EmbeddedResource Include="Admin\UpdateProfile.resx">
       <DependentUpon>UpdateProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UpdateService.resx">
+      <DependentUpon>UpdateService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RestoreData.resx">
+      <DependentUpon>RestoreData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDentist.resx">
+      <DependentUpon>ViewDentist.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DCMSdbDataSet.xsc">
       <DependentUpon>DCMSdbDataSet.xsd</DependentUpon>
     </None>
@@ -184,7 +230,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

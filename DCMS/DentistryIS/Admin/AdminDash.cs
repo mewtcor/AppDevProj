@@ -93,5 +93,45 @@ namespace DentistryIS
             form.Show();
             form.WindowState = FormWindowState.Maximized;
         }
+
+        private void addServiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddService form = new AddService();
+            form.MdiParent = this;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
+        }
+
+        private void updateServiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateService form = new UpdateService();
+            form.MdiParent = this;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
+        }
+
+        private void backUpDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackUpData form = new BackUpData();
+            form.MdiParent = this;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
+        }
+
+        private void restoreDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RestoreData form = new RestoreData();
+            form.MdiParent = this;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
+        }
+
+        private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewDentist form = new ViewDentist();
+            form.MdiParent = this;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
+        }
     }
 }
