@@ -125,7 +125,7 @@
             // 
             this.ContactNoTextBox.Location = new System.Drawing.Point(102, 223);
             this.ContactNoTextBox.Name = "ContactNoTextBox";
-            this.ContactNoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ContactNoTextBox.Size = new System.Drawing.Size(200, 20);
             this.ContactNoTextBox.TabIndex = 9;
             // 
             // label5
@@ -197,7 +197,7 @@
             "Type O"});
             this.BloodGroupComboBox.Location = new System.Drawing.Point(102, 299);
             this.BloodGroupComboBox.Name = "BloodGroupComboBox";
-            this.BloodGroupComboBox.Size = new System.Drawing.Size(121, 21);
+            this.BloodGroupComboBox.Size = new System.Drawing.Size(200, 21);
             this.BloodGroupComboBox.TabIndex = 17;
             // 
             // DOBDateTimePicker
