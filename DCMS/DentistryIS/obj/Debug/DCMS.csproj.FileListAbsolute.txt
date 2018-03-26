@@ -1,0 +1,160 @@
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DCMS.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.AssistantDash.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorDash.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.exe.config
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\bin\Debug\DentistryIS.exe.config
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csprojResolveAssemblyReference.cache
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AssistantDash.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorDash.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrCPW.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPatients.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.DrProfile.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAppointments.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrReports.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPayment.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAbout.resources
+\\Mac\Home\Desktop\Project\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrSearchPatient.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.Appointment.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.PatientInfo.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAbout.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAppointments.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrCPW.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPatients.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DrProfile.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrReports.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPayment.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrSearchPatient.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AddProfile.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AddService.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.AddUser.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.BackUpData.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.DeleteUser.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.RestoreData.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateProfile.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateService.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateUser.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewUser.resources
+C:\Users\johnl\source\repos\AppDevProj\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewDentist.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\DentistryIS.exe.config
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DCMS.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AddProfile.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AddService.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AddUser.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.BackUpData.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.DeleteUser.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.RestoreData.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateProfile.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateService.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateUser.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewUser.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.Appointment.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AssistantDash.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.PatientInfo.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAbout.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAppointments.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrCPW.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorDash.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPatients.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.DrProfile.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrReports.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPayment.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrSearchPatient.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewDentist.resources
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
+\\Mac\Home\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\SplashScreen.dll
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\DentistryIS.exe.config
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\bin\Debug\SplashScreen.dll
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DCMS.csprojResolveAssemblyReference.cache
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AddProfile.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AddService.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AddUser.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.BackUpData.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.DeleteUser.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.RestoreData.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateProfile.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateService.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateUser.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewDentist.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewUser.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.Appointment.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AssistantDash.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.PatientInfo.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAbout.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAppointments.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrCPW.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorDash.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPatients.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.DrProfile.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrReports.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPayment.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrSearchPatient.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
+C:\Users\Maikel Suwisto\Desktop\AppDevProj-master\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\bin\Debug\DentistryIS.exe.config
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\bin\Debug\DentistryIS.exe
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\bin\Debug\DentistryIS.pdb
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\bin\Debug\SplashScreen.dll
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DCMS.csprojResolveAssemblyReference.cache
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.AddProfile.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.AddService.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.AddUser.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.BackUpData.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.DeleteUser.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.RestoreData.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateProfile.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateService.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.UpdateUser.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewDentist.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.ViewUser.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.Appointment.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.AssistantDash.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Assistant.PatientInfo.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAbout.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrAppointments.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrCPW.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.DoctorDash.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPatients.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.DrProfile.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrReports.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrPayment.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Doctor.DrSearchPatient.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Login.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.AdminDash.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.Properties.Resources.resources
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DCMS.csproj.GenerateResource.Cache
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DCMS.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.exe
+\\Mac\Home\Downloads\Telegram Desktop\AppDevProj-master 2\DCMS\DentistryIS\obj\Debug\DentistryIS.pdb
