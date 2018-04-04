@@ -25,29 +25,7 @@ namespace DentistryIS
             lblCurDate.Text = DateTime.Now.ToString("dd MMMM yyyy");
         }
 
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void doctorModuleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DoctorDash drForm = new DoctorDash();
-            drForm.Show();
-        }
-
-        private void assistantToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AssistantDash asForm = new AssistantDash();
-            asForm.Show();    
-        }
-
-        private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -60,29 +38,22 @@ namespace DentistryIS
         private void viewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ViewUser form = new ViewUser();
-            //form.MdiParent = this;
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
-            //form.Show();
             form.ShowDialog();
-            //form.WindowState = FormWindowState.Maximized;
         }
 
         private void updateUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UpdateUser form = new UpdateUser();
             form.StartPosition = FormStartPosition.CenterScreen;
-            form.FormBorderStyle = FormBorderStyle.Fixed3D;
-            
+            form.FormBorderStyle = FormBorderStyle.Fixed3D;       
             form.ShowDialog();
         }
 
         private void deleteUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeleteUser form = new DeleteUser();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
@@ -94,9 +65,7 @@ namespace DentistryIS
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void updateProfileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,9 +74,7 @@ namespace DentistryIS
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void addServiceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,9 +83,7 @@ namespace DentistryIS
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void updateServiceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -127,9 +92,7 @@ namespace DentistryIS
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void backUpDataToolStripMenuItem_Click(object sender, EventArgs e)
@@ -138,9 +101,7 @@ namespace DentistryIS
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void restoreDataToolStripMenuItem_Click(object sender, EventArgs e)
@@ -149,9 +110,7 @@ namespace DentistryIS
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
+           
         }
 
         private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -160,9 +119,7 @@ namespace DentistryIS
             form.StartPosition = FormStartPosition.CenterScreen;
             form.FormBorderStyle = FormBorderStyle.Fixed3D;
             form.ShowDialog();
-            //form.MdiParent = this;
-            //form.Show();
-            //form.WindowState = FormWindowState.Maximized;
+           
         }
 
         private void logOffToolStripMenuItem_Click(object sender, EventArgs e)

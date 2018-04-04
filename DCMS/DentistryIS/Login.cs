@@ -65,7 +65,7 @@ namespace DentistryIS
         {
             //LoginClass init = new LoginClass();
             //init.InitSplash();
-           // this.Activate();
+            //this.Activate();
         }
     }
 }

@@ -16,74 +16,47 @@ namespace DentistryIS.Doctor
 {
     public partial class DrPayment : Form
     {
-        //database connection declarations
-        SqlConnection conn;
-        SqlCommand cmd;
-        string connstr = ConfigurationManager.ConnectionStrings["DentistryDB"].ConnectionString;
 
+       
         public DrPayment()
         {
             InitializeComponent();
-            
-            FillDrCmb();
-            FillPartCmb();
             InitLvw();
         }
         public DrPayment(System.Drawing.Image i)
         {
             InitializeComponent();
             picProfPayment.Image = i;
-            FillDrCmb();
-            FillPartCmb();
             InitLvw();
         }
         private void FillDrCmb()
         {
-            //Fill Dentist Combo
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("select * from Dentist", conn);
-
-            conn.Open();
-            var rd = cmd.ExecuteReader();
-
-            while (rd.Read())
+            DrPaymentClass frmdat = new DrPaymentClass();
+            DataTable dat = frmdat.DatFillDrCmb();
+            if (dat != null)
             {
-                string dName = rd["Name"].ToString();
-                cmbDr.Items.Add(dName);
+                cmbDr.ValueMember = dat.Columns[0].ToString();
+                cmbDr.DataSource = dat;
             }
-            conn.Close();
         }
         private void FillPartCmb()
         {
-            //Fill Particulars/Service Combo
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("select * from Service", conn);
-
-            conn.Open();
-            var rd = cmd.ExecuteReader();
-
-            while (rd.Read())
+            DrPaymentClass frmdat = new DrPaymentClass();
+            DataTable dat = frmdat.DatFillPartCmb();
+            if (dat != null)
             {
-                string dName = rd["Service_Name"].ToString();
-                cmbPart.Items.Add(dName);
+                cmbPart.ValueMember = dat.Columns[0].ToString();
+                cmbPart.DataSource = dat;
+                cmbPart.SelectedIndex = -1;
+                
             }
-            conn.Close();
         }
         public String DrPaymentTempText;
         private void FillDrID()
         {
-            //Fill DentistID Textbox
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("select * from Dentist where Name = '" + cmbDr.Text + "'", conn);
-            conn.Open();
-            var rd = cmd.ExecuteReader();
-
-            while (rd.Read())
-            {
-                txtDID.Text = rd["DentistID"].ToString();
-
-            }
-            conn.Close();
+            string drName = cmbDr.Text;
+            DrPaymentClass dat = new DrPaymentClass();
+            txtDID.Text =  dat.DatDrID(drName);
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -101,25 +74,12 @@ namespace DentistryIS.Doctor
             txtPName.Text = Globals.CurrentPatient;
             txtPDate.Text = DateTime.Now.ToString("dd MMMM yyyy");
             CurDrInfo();
-            DrPaymentClass frm = new DrPaymentClass();
-
         }
         private void CurDrInfo()
         {
-            //string test = "Doctor Strange";
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("select * from Dentist where Name = '" + Globals.CurrentUser + "'", conn);
-
-            conn.Open();
-
-            var rd = cmd.ExecuteReader();
-            //if data found
-            while (rd.Read())
-            {
-                txtDID.Text = rd["DentistID"].ToString();
-                cmbDr.Text = rd["Name"].ToString();
-            }
-            conn.Close();
+            DrPaymentClass getdat = new DrPaymentClass();
+            txtDID.Text = getdat.DatCurDrInfo().Item1;
+            cmbDr.Text = getdat.DatCurDrInfo().Item2;
         }
 
         private void cmbDr_SelectedIndexChanged(object sender, EventArgs e)
@@ -224,25 +184,16 @@ namespace DentistryIS.Doctor
             prtPayment.Document = printDocument1;
         }
         
-        private void SaveDat()
+        public void SaveDat()
         {
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("INSERT INTO Bill (Dentist_ID, Patient_ID, Date, Service, Bill_Total) VALUES (@Dentist_ID, @Patient_ID, @Date, @Service, @Bill_Total)", conn);
-
-            cmd.Parameters.AddWithValue("@Dentist_ID", txtDID.Text);
-            cmd.Parameters.AddWithValue("@Patient_ID", txtPID.Text);
-            cmd.Parameters.AddWithValue("@Date", txtPDate.Text);
-            cmd.Parameters.AddWithValue("@Service",AllParticulars);
-            cmd.Parameters.AddWithValue("@Bill_Total", txtTotal.Text);
-            conn.Open();
-            if (cmd.ExecuteNonQuery() == 1)
-            {
-                
-                MessageBox.Show("Data Saved!");
-              
-            }
-            conn.Close();
-            //clearFields();
+            DrPaymentClass dat = new DrPaymentClass();
+            string did = txtDID.Text;
+            string pid = txtPID.Text;
+            string date = txtPDate.Text;
+            string allp = AllParticulars;
+            string ttotal = txtTotal.Text;
+            dat.Save(did, pid, date, allp, ttotal);
+             
         }
         private void clearFields()
         {
@@ -257,19 +208,17 @@ namespace DentistryIS.Doctor
         }
         private void cmbPart_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-                txtAmount.ReadOnly = false;
-                conn = new SqlConnection(connstr);
-                cmd = new SqlCommand("select * from Service where Service_Name = '" + cmbPart.Text + "'", conn);
-                conn.Open();
-                var rd = cmd.ExecuteReader();
-
-                while (rd.Read())
-
-                {
-                    txtAmount.Text = rd["Amount"].ToString();
-                }
-                conn.Close(); 
+            if (cmbPart.SelectedIndex == -1)
+            {
+                txtAmount.Text = "";
+                return;
+            }
+            else
+            {
+                string servName = cmbPart.Text;
+                DrPaymentClass dat = new DrPaymentClass();
+                txtAmount.Text = dat.datServAmount(servName);
+            }
         }
 
         public string AllParticulars;
@@ -324,5 +273,11 @@ namespace DentistryIS.Doctor
             clearFields();
         }
 
+        private void txtPName_TextChanged(object sender, EventArgs e)
+        {
+            FillDrCmb();
+            FillPartCmb();
+
+        }
     }
 }

@@ -14,9 +14,8 @@ namespace DentistryIS
 {
     public partial class DrProfile : Form
     {
-        SqlConnection conn;
-        SqlCommand cmd;
-        string connstr = ConfigurationManager.ConnectionStrings["DentistryDB"].ConnectionString;
+       
+
         public DrProfile()
         {
             InitializeComponent();
@@ -28,24 +27,11 @@ namespace DentistryIS
 
         private void DoctorProfile_Load(object sender, EventArgs e)
         {
-            //this.WindowState = FormWindowState.Maximized;
-            //this.MinimizeBox = false;
-            //this.MaximizeBox = false;
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("select * from Users where Username='" + Globals.CurrentUserName + "'", conn);
-
-            conn.Open();
-            var rd = cmd.ExecuteReader();
-            if (rd.HasRows)
-            {
-                while (rd.Read())
-                {
-                    txtName.Text = rd["Name"].ToString();
-                    txtContactNo.Text = rd["Contact"].ToString();
-                    txtAddress.Text = rd["Address"].ToString();
-                    txtUAccess.Text = rd["UAccess"].ToString();
-                }
-            }
+            DrProfileClass get = new DrProfileClass();
+            txtName.Text = get.DatProfile().Item1;
+            txtContactNo.Text = get.DatProfile().Item2;
+            txtAddress.Text = get.DatProfile().Item3;
+            txtUAccess.Text = get.DatProfile().Item4;
         }
     }
 }

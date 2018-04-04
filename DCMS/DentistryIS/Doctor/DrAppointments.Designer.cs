@@ -108,6 +108,7 @@
             this.AppointmentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AppointmentDataGridView.Location = new System.Drawing.Point(76, 254);
             this.AppointmentDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.AppointmentDataGridView.MultiSelect = false;
             this.AppointmentDataGridView.Name = "AppointmentDataGridView";
             this.AppointmentDataGridView.ReadOnly = true;
             this.AppointmentDataGridView.RowTemplate.Height = 18;
@@ -193,12 +194,12 @@
             // dtpDate
             // 
             this.dtpDate.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDate.Location = new System.Drawing.Point(972, 206);
+            this.dtpDate.Location = new System.Drawing.Point(976, 191);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(444, 43);
             this.dtpDate.TabIndex = 73;
-            this.dtpDate.ValueChanged += new System.EventHandler(this.dtpDate_ValueChanged);
+            this.dtpDate.CloseUp += new System.EventHandler(this.dtpDate_CloseUp);
             // 
             // btnShowAll
             // 
@@ -342,6 +343,7 @@
             this.PatientNameTextBox.Name = "PatientNameTextBox";
             this.PatientNameTextBox.Size = new System.Drawing.Size(530, 38);
             this.PatientNameTextBox.TabIndex = 69;
+            this.PatientNameTextBox.TextChanged += new System.EventHandler(this.PatientNameTextBox_TextChanged_1);
             // 
             // PatientIDTextBox
             // 

@@ -19,37 +19,26 @@ namespace DentistryIS.Doctor
         {
             InitializeComponent();
         }
-        //db connection declarations
-        SqlConnection conn;
-        SqlCommand cmd;
-        string connstr = ConfigurationManager.ConnectionStrings["DentistryDB"].ConnectionString;
-        SqlDataReader rdr;
+        
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
         }
+
         private void ShowAll()
         {
-            //author: enzo
-            //this method displays all data in grdpatient(gridview) when called
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("SELECT * FROM Patient", conn);
-            DataTable dt = new DataTable();
-
-            conn.Open();
-            rdr = cmd.ExecuteReader();
-            if (rdr.HasRows)
+            DrSearchPatientClass frm = new DrSearchPatientClass();
+            DataTable dt = frm.GetGridItems();
+            if (dt == null)
             {
-                dt.Load(rdr);
-                grdPatients.DataSource = dt;
+                grdPatients.CurrentCell = null;
             }
             else
             {
-                MessageBox.Show("No data to show");
+                grdPatients.DataSource = dt;
+                ArrangeGridColumns();
+
             }
-            conn.Close();
-            grdPatients.CurrentCell = null;
-            ArrangeGridColumns();
         }
         private void ArrangeGridColumns()
         {
@@ -64,25 +53,20 @@ namespace DentistryIS.Doctor
         }
         private void ShowLike()
         {
-            //author:enzo
-            //this method displays all data that corresponds to the name in the search field (txtsearch)
-            conn = new SqlConnection(connstr);
-            cmd = new SqlCommand("SELECT * FROM Patient WHERE Name LIKE @Name", conn);
+            string SearchName = txtSearch.Text;
+            DrSearchPatientClass frm = new DrSearchPatientClass();
 
-            cmd.Parameters.AddWithValue("Name", txtSearch.Text + "%");
-            DataTable dt = new DataTable();
-
-            conn.Open();
-            rdr = cmd.ExecuteReader();
-
-            if (rdr.HasRows)
+            DataTable dt = frm.SearchByName(SearchName);
+            if (dt == null)
             {
-                dt.Load(rdr);
-                grdPatients.DataSource = dt;
+                grdPatients.CurrentCell = null;
             }
+            else
+            {
+                grdPatients.DataSource = dt;
+                ArrangeGridColumns();
 
-            conn.Close();
-            grdPatients.CurrentCell = null;
+            }
         }
 
         private void ClearTextFields()
@@ -107,6 +91,7 @@ namespace DentistryIS.Doctor
             }
             else
             {
+                
                 ShowLike();
             }
         }
@@ -114,24 +99,27 @@ namespace DentistryIS.Doctor
         public int ID;
         private void grdPatients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = grdPatients.Rows[e.RowIndex];
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = grdPatients.Rows[e.RowIndex];
 
-            ID = Convert.ToInt32(row.Cells["Patient_ID"].Value);
-            txtPID.Text = row.Cells["Patient_ID"].Value.ToString();
-            txtName.Text = row.Cells["Name"].Value.ToString();
-            txtAge.Text = row.Cells["Age"].Value.ToString();
-            txtGender.Text = row.Cells["Gender"].Value.ToString();     
-            txtContact.Text = row.Cells["ContactNo"].Value.ToString();
-            if ((row.Cells["Image"].Value) == DBNull.Value)
-            {
-                picProfile.Image = null;
-                picProfile.Invalidate();
-            }
-            else
-            {
-                MemoryStream ms = new MemoryStream((byte[])grdPatients.CurrentRow.Cells["Image"].Value);
-                picProfile.Image = Image.FromStream(ms);
-                
+                ID = Convert.ToInt32(row.Cells["Patient_ID"].Value);
+                txtPID.Text = row.Cells["Patient_ID"].Value.ToString();
+                txtName.Text = row.Cells["Name"].Value.ToString();
+                txtAge.Text = row.Cells["Age"].Value.ToString();
+                txtGender.Text = row.Cells["Gender"].Value.ToString();
+                txtContact.Text = row.Cells["ContactNo"].Value.ToString();
+                if ((row.Cells["Image"].Value) == DBNull.Value)
+                {
+                    picProfile.Image = null;
+                    picProfile.Invalidate();
+                }
+                else
+                {
+                    MemoryStream ms = new MemoryStream((byte[])grdPatients.CurrentRow.Cells["Image"].Value);
+                    picProfile.Image = Image.FromStream(ms);
+
+                }
             }
         }
         public static string PID;

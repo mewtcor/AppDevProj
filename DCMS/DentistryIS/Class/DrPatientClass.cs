@@ -117,8 +117,7 @@ namespace DentistryIS
         }
         public DataTable SearchByName()
         {
-            //author:enzo
-            //this method displays all data that corresponds to the name in the search field (txtsearch)
+    
             conn = new SqlConnection(connstr);
             cmd = new SqlCommand("SELECT * FROM Patient WHERE Name LIKE @Name", conn);
 
@@ -140,6 +139,26 @@ namespace DentistryIS
                 conn.Close();
                 return dt;
             }
+        }
+        public void DelProc(string pid)
+        {
+            conn = new SqlConnection(connstr);
+            cmd = new SqlCommand("DELETE FROM Patient WHERE Patient_ID=@Patient_ID", conn);
+            cmd.Parameters.AddWithValue("@Patient_ID", pid);
+
+            conn.Open();
+            DialogResult dialogResult = MessageBox.Show("Sure?", "Delete Record", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                MessageBox.Show(pid);
+                cmd.ExecuteNonQuery();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+           
+            conn.Close();
         }
     }
 }

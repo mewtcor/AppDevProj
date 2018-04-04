@@ -22,6 +22,7 @@ namespace DentistryIS.Doctor
             DisableButtons();
             btnEdit.Text = "Edit";
             btnAdd.Enabled = true;
+            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -55,6 +56,7 @@ namespace DentistryIS.Doctor
             btnEdit.Enabled = false;
             btnSave.Enabled = false;
             btnPayment.Enabled = false;
+            btnDelete.Enabled = false;
         }
         private void ArrangeGridColumns()
         {
@@ -110,6 +112,8 @@ namespace DentistryIS.Doctor
             {
                 ShowAll();
                 ClearTextFields();
+                DisableButtons();
+                btnAdd.Enabled = true;
             }
             else
             {
@@ -118,29 +122,32 @@ namespace DentistryIS.Doctor
             }
         }
         public int ID;
+
         private void FillGrid(DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = grdPatients.Rows[e.RowIndex];
-
-            ID = Convert.ToInt32(row.Cells["Patient_ID"].Value);
-            txtPID.Text = row.Cells["Patient_ID"].Value.ToString();
-            txtName.Text = row.Cells["Name"].Value.ToString();
-            txtAge.Text = row.Cells["Age"].Value.ToString();
-            txtGender.Text = row.Cells["Gender"].Value.ToString();
-            txtAddress.Text = row.Cells["Address"].Value.ToString();
-            txtContactNo.Text = row.Cells["ContactNo"].Value.ToString();
-            txtDOB.Text = row.Cells["DOB"].Value.ToString();
-            txtBloodGroup.Text = row.Cells["BloodGroup"].Value.ToString();
-            txtHealth.Text = row.Cells["HealthProblem"].Value.ToString();
-            if ((row.Cells["Image"].Value) == DBNull.Value)
+            if (e.RowIndex >= 0)
             {
-                picProfile.Image = null;
-                picProfile.Invalidate();
-            }
-            else
-            {
-                MemoryStream ms = new MemoryStream((byte[])grdPatients.CurrentRow.Cells["Image"].Value);
-                picProfile.Image = Image.FromStream(ms);
+                DataGridViewRow row = grdPatients.Rows[e.RowIndex];
+                ID = Convert.ToInt32(row.Cells["Patient_ID"].Value);
+                txtPID.Text = row.Cells["Patient_ID"].Value.ToString();
+                txtName.Text = row.Cells["Name"].Value.ToString();
+                txtAge.Text = row.Cells["Age"].Value.ToString();
+                txtGender.Text = row.Cells["Gender"].Value.ToString();
+                txtAddress.Text = row.Cells["Address"].Value.ToString();
+                txtContactNo.Text = row.Cells["ContactNo"].Value.ToString();
+                txtDOB.Text = row.Cells["DOB"].Value.ToString();
+                txtBloodGroup.Text = row.Cells["BloodGroup"].Value.ToString();
+                txtHealth.Text = row.Cells["HealthProblem"].Value.ToString();
+                if ((row.Cells["Image"].Value) == DBNull.Value)
+                {
+                    picProfile.Image = null;
+                    picProfile.Invalidate();
+                }
+                else
+                {
+                    MemoryStream ms = new MemoryStream((byte[])grdPatients.CurrentRow.Cells["Image"].Value);
+                    picProfile.Image = Image.FromStream(ms);
+                }
             }
         }
 
@@ -219,6 +226,7 @@ namespace DentistryIS.Doctor
                     btnSave.Enabled = false;
                     btnAdd.Enabled = true;
                     btnBrowse.Enabled = false;
+                    btnDelete.Enabled = false;
                     DisableTexts();
                 }
                 else
@@ -290,32 +298,39 @@ namespace DentistryIS.Doctor
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txtPID.Text == "")
+            if (txtName.Text == "" || txtAge.Text == "" || txtGender.Text == "" || txtDOB.Text == "" || txtBloodGroup.Text == "" || txtHealth.Text == "" || txtContactNo.Text == "" || txtAddress.Text == "")
             {
-                AddPatient();
-                //normalView();
-                btnEdit.Text = "Edit";
-
-                ClearTextFields();
-                DisableTexts();
-                btnPayment.Enabled = true;
-                btnEdit.Enabled = true;
-                ShowAll();
+                MessageBox.Show("Textfields cannot be blank!");
+                return;
             }
-
             else
             {
-               UpdatePatient();
-                //normalView();
-                btnEdit.Text = "Edit";
+                if (txtPID.Text == "")
+                {
+                    AddPatient();
+                    //normalView();
+                    btnEdit.Text = "Edit";
+                    ClearTextFields();
+                    DisableTexts();
+                    btnPayment.Enabled = true;
+                    btnEdit.Enabled = true;
+                    ShowAll();
+                }
 
-                ClearTextFields();
-                DisableTexts();
-                ShowAll();
-                btnPayment.Enabled = true;
-                btnEdit.Enabled = true;
+                else
+                {
+                    UpdatePatient();
+                    //normalView();
+                    btnEdit.Text = "Edit";
+                    ClearTextFields();
+                    DisableTexts();
+                    ShowAll();
+                    btnPayment.Enabled = false;
+                    btnEdit.Enabled = false;
+                    btnAdd.Enabled = true;
+                    btnDelete.Enabled = false;
+                }
             }
-            
         }
        
         private void btnAdd_Click(object sender, EventArgs e)
@@ -330,7 +345,42 @@ namespace DentistryIS.Doctor
             txtName.Focus();
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DrPatientClass del = new DrPatientClass();
+            string pid = txtPID.Text;
+            del.DelProc(pid);
+            //normalView();
+            ClearTextFields();
+            DisableTexts();
+            ShowAll();
+            btnPayment.Enabled = false;
+            btnEdit.Enabled = false;
+            btnAdd.Enabled = true;
+            btnDelete.Enabled = false;
+        }
 
+        private void txtContactNo_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtContactNo.Text != "")
+            {
+                int cno;
+                if (int.TryParse(txtContactNo.Text, out cno))
+                {
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Not a valid format, please type numbers only!");
+                    txtContactNo.Text = "";
+                    txtContactNo.Focus();
+                }
+                e.Cancel = true;
+            }
+            else
+            {
+                return;
+            }
+        }
     }
-
 }

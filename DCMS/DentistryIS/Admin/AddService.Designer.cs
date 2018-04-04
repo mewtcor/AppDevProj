@@ -160,7 +160,6 @@
             this.MinimizeBox = false;
             this.Name = "AddService";
             this.Text = "AddService";
-            this.Load += new System.EventHandler(this.AddService_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -267,7 +267,6 @@
             this.MinimizeBox = false;
             this.Name = "AddProfile";
             this.Text = "User Profile";
-            this.Load += new System.EventHandler(this.AddProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

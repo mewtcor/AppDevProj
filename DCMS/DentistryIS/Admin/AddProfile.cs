@@ -78,19 +78,9 @@ namespace DentistryIS
             clearField();
         }
 
-        private void txtDOB_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void AddProfile_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

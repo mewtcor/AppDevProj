@@ -137,6 +137,8 @@
     <Compile Include="Class\DrAppointmentClass.cs" />
     <Compile Include="Class\DrPatientClass.cs" />
     <Compile Include="Class\DrPaymentClass.cs" />
+    <Compile Include="Class\DrProfileClass.cs" />
+    <Compile Include="Class\DrSearchPatientClass.cs" />
     <Compile Include="Doctor\DoctorDash.cs">
       <SubType>Form</SubType>
     </Compile>

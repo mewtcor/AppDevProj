@@ -45,44 +45,17 @@ namespace DentistryIS
                         string roleLevel = rd["UAccess"].ToString();
                         uaccess = rd["UAccess"].ToString();
                         return uaccess;
-                        /**if (roleLevel == "Administrator")
-                        {
-                            Login frm = new Login();
-                            frm.Close();
-                            //show Admin dash
-                            AdminDash adForm = new AdminDash();
-                            adForm.Show();
-                        }
-                        else if (roleLevel == "Assistant")
-                        {
-                            Login frm = new Login();
-                            frm.Close();
-                            //show Assistant Dash
-                            AssistantDash astForm = new AssistantDash();
-                            astForm.Show();
-                        }
-                        else if (roleLevel == "Doctor")
-                        {
-                            Login frm = new Login();
-                            frm.Close();
-                            //show Doctor Dash
-                            DoctorDash drForm = new DoctorDash();
-                            drForm.Show();
-                        }**/
                     }
                     return null;
                 }
                 else
                 {
                     //if no data found
-                    Login frm = new Login();
-
+                   // Login frm = new Login();
                     MessageBox.Show("Whoops! Please check your login details and try again");
-                    frm.uname = "";
-                    frm.pword = "";
-                    username = "";
-                    password = "";
-                    uaccess = "";
+                    Application.OpenForms["Login"].Controls["txtUsername"].Text = "";
+                    Application.OpenForms["Login"].Controls["txtPassword"].Text = "";
+                    Application.OpenForms["Login"].Controls["txtUsername"].Focus();
                     return null;
                 }
             }
@@ -106,7 +79,7 @@ namespace DentistryIS
 
             //loading data
             string str = string.Empty;
-            for (int i = 0; i < 25000; i++)
+            for (int i = 0; i < 80000; i++)
             {
                 str += i.ToString();//Init data
             }

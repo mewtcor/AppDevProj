@@ -178,6 +178,7 @@
             this.txtPName.ReadOnly = true;
             this.txtPName.Size = new System.Drawing.Size(570, 38);
             this.txtPName.TabIndex = 4;
+            this.txtPName.TextChanged += new System.EventHandler(this.txtPName_TextChanged);
             // 
             // txtPID
             // 

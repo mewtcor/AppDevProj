@@ -75,10 +75,5 @@ namespace DentistryIS
         {
             this.Close();
         }
-
-        private void AddService_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

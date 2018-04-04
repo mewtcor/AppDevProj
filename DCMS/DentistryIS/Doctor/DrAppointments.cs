@@ -239,23 +239,17 @@ namespace DentistryIS.Doctor
 
         private void AppointmentDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            FillGrid(e);
+        }
+        private void FillGrid(DataGridViewCellEventArgs e)
+        {
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = AppointmentDataGridView.Rows[e.RowIndex];
-
-                if (row.Cells["AppointmentID"].Value == DBNull.Value || row.Cells["PatientID"].Value == DBNull.Value)
-                {
-                    PatientIDTextBox.Text = " ";
-                    AppointmentIDTextBox.Text = " ";
-                }
-                else
-                {
-                    AppointmentID = Convert.ToInt32(row.Cells["AppointmentID"].Value);
-                    AppointmentIDTextBox.Text = AppointmentID.ToString();
-                    PatientID = Convert.ToInt32(row.Cells["PatientID"].Value);
-                    PatientIDTextBox.Text = PatientID.ToString();
-                }
-
+                AppointmentID = Convert.ToInt32(row.Cells["AppointmentID"].Value);
+                AppointmentIDTextBox.Text = AppointmentID.ToString();
+                PatientID = Convert.ToInt32(row.Cells["PatientID"].Value);
+                PatientIDTextBox.Text = PatientID.ToString();
                 PatientNameTextBox.Text = row.Cells["Patient_Name"].Value.ToString();
                 NoteTextBox.Text = row.Cells["Note"].Value.ToString();
                 ServiceComboBox.Text = row.Cells["Service"].Value.ToString();
@@ -274,9 +268,8 @@ namespace DentistryIS.Doctor
                 btnEdit.Enabled = true;
                 btnClear.Enabled = true;
                 btnClear.Text = "Cancel";
-            }
+            }   
         }
-
         private void AddAppointmentButton_Click(object sender, EventArgs e)
         {
             
@@ -285,12 +278,12 @@ namespace DentistryIS.Doctor
 
         private void dtpDate_ValueChanged(object sender, EventArgs e)
         {
-            AppointmentDataGridView.Columns.Clear();
             Globals.TempDate = dtpDate.Value;
-            ShowByDate();            
+            ShowByDate();
         }
         private void ShowByDate()
         {
+            AppointmentDataGridView.Columns.Clear();
             DrAppointmentClass grid = new DrAppointmentClass();
             DataTable dt = grid.Get();
             
@@ -484,6 +477,17 @@ namespace DentistryIS.Doctor
                     btnClose.Enabled = true;
                 }
             }
+        }
+
+        private void PatientNameTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            //ShowAppointmentData();
+        }
+
+        private void dtpDate_CloseUp(object sender, EventArgs e)
+        {
+            Globals.TempDate = dtpDate.Value;
+            ShowByDate();
         }
     }
 }
